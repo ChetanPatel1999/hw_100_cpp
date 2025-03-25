@@ -46,7 +46,7 @@ int main()
             cout << "please enter 1 to 4 number";
         }
         cout << "you want to order some thing more  so press 1 : ";
-        cin >> num;
+        cin >> num;//2
         if (num != 1)
         {
             break;
