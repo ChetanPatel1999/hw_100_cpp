@@ -3,7 +3,7 @@
 using namespace std;
 class mobile
 {
-    public:
+   public:
     string name;
     int price;
     string color;
