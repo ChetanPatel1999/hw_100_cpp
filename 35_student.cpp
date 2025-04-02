@@ -37,19 +37,19 @@ public:
         }
         cout << "_____________________________________" << endl;
     }
-    void total_result()
+     static void total_result()
     {
         cout << "total results of students :" << endl;
         cout << "total pass : " << total_pass << endl;
         cout << "total Fail : " << total_fail << endl;
         cout << "_____________________________________" << endl;
     }
-    void total_std_display()
+    static void total_std_display()
     {
         cout << "total student : - " << total_count << endl;
         cout << "_____________________________________" << endl;
     }
-    void chang_school(string s)
+    static void chang_school(string s)
     {
         school = s;
     }
@@ -64,12 +64,12 @@ int main()
     s1.set_student("jaya ", 101, 20);
     s2.set_student("abhimanyu ", 102, 40);
     s3.set_student("mohit", 103, 90);
-    s4.set_student("rishi", 103, 70);
-    s1.total_std_display();
+    s4.set_student("rishi", 104, 70);
+    student::total_std_display();
     s1.result_card();
     s2.result_card();
-    s1.chang_school("vivekananda vidhya vihar");
+    student::chang_school("vivekananda vidhya vihar");
     s3.result_card();
     s4.result_card();
-    s1.total_result();
+    student::total_result();
 }
