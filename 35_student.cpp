@@ -37,7 +37,7 @@ public:
         }
         cout << "_____________________________________" << endl;
     }
-     static void total_result()
+    static void total_result()
     {
         cout << "total results of students :" << endl;
         cout << "total pass : " << total_pass << endl;
@@ -52,6 +52,31 @@ public:
     static void chang_school(string s)
     {
         school = s;
+    }
+    static void average(student obj1, student obj2)
+    {
+        float avg;
+        avg = (obj1.per + obj2.per) / 2;
+        cout << "average of " << obj1.name << " and " << obj2.name << " = " << avg << endl;
+        cout << "_____________________________________________________________________" << endl;
+    }
+    static void average(student obj1, student obj2, student obj3)
+    {
+        float avg;
+        avg = (obj1.per + obj2.per + obj3.per) / 3;
+        cout << "average of " << obj1.name << " and " << obj2.name << " and " << obj3.name << " = " << avg << endl;
+        cout << "_____________________________________________________________________" << endl;
+    }
+    static void compare(student obj1, student obj2)
+    {
+        if (obj1.per > obj2.per)
+        {
+            cout << obj1.name << " have greater percentage than " << obj2.name << endl;
+        }
+        else
+        {
+            cout << obj2.name << " have greater percentage than " << obj1.name << endl;
+        }
     }
 };
 int student::total_pass = 0;
@@ -72,4 +97,8 @@ int main()
     s3.result_card();
     s4.result_card();
     student::total_result();
+    student::average(s1, s2);
+    student::average(s1, s3);
+    student::average(s1, s2, s3);
+    student::compare(s2, s1);
 }
