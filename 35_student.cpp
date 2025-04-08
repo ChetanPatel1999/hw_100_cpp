@@ -11,7 +11,7 @@ class student
     static string school;
 
 public:
-    void set_student(string s, int r, float p)
+    student(string s, int r, float p)
     {
         name = s;
         rno = r;
@@ -46,7 +46,7 @@ public:
     }
     static void total_std_display()
     {
-        cout << "total student : - " << total_count << endl;
+        cout << "total student : " << total_count << endl;
         cout << "_____________________________________" << endl;
     }
     static void chang_school(string s)
@@ -85,11 +85,10 @@ int student::total_count = 0;
 string student::school = "sanskar vidhya vihar";
 int main()
 {
-    student s1, s2, s3, s4;
-    s1.set_student("jaya ", 101, 20);
-    s2.set_student("abhimanyu ", 102, 40);
-    s3.set_student("mohit", 103, 90);
-    s4.set_student("rishi", 104, 70);
+    student s1("jaya ", 101, 20);
+    student s2("abhimanyu ", 102, 40);
+    student s3("mohit", 103, 90);
+    student s4("rishi", 104, 70);
     student::total_std_display();
     s1.result_card();
     s2.result_card();

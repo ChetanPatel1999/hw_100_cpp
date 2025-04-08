@@ -7,7 +7,7 @@ class data
     int num2;
 
 public:
-    void setdata(int a, int b)
+   data(int a, int b)
     {
         num1 = a;
         num2 = b;
@@ -26,9 +26,7 @@ public:
 };
 int main()
 {
-    data d1, d2;
-    d1.setdata(12, 6);
-    d2.setdata(5, 9);
+    data d1(12,4), d2(78,90);
     d1.display();
     d2.display();
     d1.add_object_data(d2);

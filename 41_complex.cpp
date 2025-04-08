@@ -6,7 +6,8 @@ class complex
     int image;
 
 public:
-    void set_complex(int a, int b)
+    complex() {}
+    complex(int a, int b)
     {
         real = a;
         image = b;
@@ -25,9 +26,7 @@ public:
 };
 int main()
 {
-    complex c1, c2, c3;
-    c1.set_complex(12, 8);
-    c2.set_complex(8, 9);
+    complex c1(12, 4), c2(8, 5), c3;
     c1.display();
     c2.display();
     c3 = c1.sum(c2);
