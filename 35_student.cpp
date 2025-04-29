@@ -9,7 +9,6 @@ class student
     static int total_pass;
     static int total_count;
     static string school;
-
 public:
     student(string s, int r, float p)
     {

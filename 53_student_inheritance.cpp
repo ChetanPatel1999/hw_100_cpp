@@ -21,7 +21,7 @@ public:
         cout << "student fees : " << fees << endl;
     }
 };
-class mathstd : public student
+class mathstd:public student
 {
     int math;
     int physics;

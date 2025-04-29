@@ -10,18 +10,15 @@ class account
 public:
     static void create_account(account ac[], int index)
     {
-        cout << endl
-             << "enter coustomer name : ";
+        cout << endl << "enter coustomer name : ";
         cin >> ac[index].ac_name;
         cout << "set account number :";
         cin >> ac[index].ac_num;
         cout << "set initial belence : ";
         cin >> ac[index].belence;
         total_bank_belence = total_bank_belence + ac[index].belence;
-        cout << endl
-             << "account create succesfully ";
-        cout << endl
-             << endl;
+        cout << endl << "account create succesfully ";
+        cout << endl << endl;
     }
     static void accounts_display(account ac[], int index)
     {
