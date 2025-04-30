@@ -4,6 +4,7 @@ using namespace std;
 class emp
 {
     int id;
+    protected:
     float sallary;
 
 public:
@@ -36,6 +37,13 @@ public:
         cout << "language : " << lang << endl;
         cout << "project : " << project << endl;
     }
+    void pay_sal(int day)
+    {
+        float per_day,total_pay;
+        per_day=sallary/30.0;
+        total_pay=per_day*day;
+        cout<<"total pay : "<<total_pay<<endl;
+    }
 };
 class programmer_manager : public programer
 {
@@ -60,6 +68,7 @@ int main()
     m1.get_emp();
     m1.get_prgm();
     m1.get_mng();
+    m1.pay_sal(17);
 
     return 0;
 }

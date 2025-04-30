@@ -22,8 +22,8 @@ class derived : public base1, public base2
 public:
     void great()
     {
-        base1::great();
-        base2::great();
+       base1::great();
+       base2::great();
     }
 };
 int main()
