@@ -38,6 +38,6 @@ public:
 };
 int main()
 {
-    child c1(45, 89);
+    child c1(45);
     return 0;
 }

@@ -23,7 +23,7 @@ public:
 };
 int main()
 {
-    demo d1,d2(78),d3,d4(12,34);
-    d1.display();
+    demo d1(8);
+    
     return 0;
 }
